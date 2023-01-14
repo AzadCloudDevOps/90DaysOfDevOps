@@ -1,11 +1,9 @@
 # Cheatsheet for Git Commands:
-Let's discuss Git commands in short
-
-## All About Git:
+Let's discuss Git commands in short like viral youtube shorts!!
 
 Git download for system : ```https://git-scm.com/downloads```
 
-Git version : ```git --version```
+How to check it's version : ```git --version```
 
 ### Basic & Advanced Git Commands
 
@@ -17,14 +15,15 @@ git remote add origin <remote_git_url> : add remote origin url
 git remote remove origin : delete remote origin url
 git remote -v : shows remote repository url's
 ```
-#### Setup
+#### Setup for user
 Configuring user information accross local repositories
 ```
 git config --global user.name "<user_name>" : set global username
 git config --global user.email "<email_address>" : set global email
 git config --global color.ui auto : set automatic command line coloring
 ```
-#### Staging & Snapshot (Working with snapshots and the Git staging area)
+#### Staging & Snapshot
+Working with snapshots and the Git staging area
 ```
 git status : shows the status of git repository, no untracked files
 git add <file_name> : adding files(untracked) into files(staged) of current branch 
@@ -43,19 +42,19 @@ git branch -D <branch_name> : force or confirm the deletion of a branch from git
 git merge <branch_name> : merges changes from another branch into the current branch
 git rebase <branch_name> : 
 ````
-#### Synchronize
+#### Synchronizing with remote
 ```
 git fetch : fetch all the remote branches
 git push origin <branch_name> : push local changes to remote branch
 git pull origin <branch_name> : pull remote changes to local branch
 ```
-#### History
+#### Logs
 ```
 git log 	  : shows logs of current branch events with more info
 git log --oneline : shows logs of branch events in one line
 git reflog 	  : shows logs in simple way
 ```
-#### Conflicts resolving
+#### Conflicts resolution
 ```
 git log --merge 	: produce the list of commits which causing the conflict
 git diff 		: identifies difference between the states repository or files
